@@ -1,0 +1,38 @@
+
+"""
+Object Detection
+Gaussian Mixture-based Background Segmentation Algorithm
+Morphological Transformations done :Morphological operations apply a structuring element to an input image, creating an output image of the same size
+Code for tracking
+
+"""
+
+import cv2
+
+#cap = cv2.VideoCapture("C:\\Users\\kgaur\\OneDrive\\IITK\Mtech Thesis\\Python\\Tracking\\crowd.mp4")
+cap=cv2.VideoCapture('multiobject.mp4')
+#cap=cv2.VideoCapture('fish1.mp4')
+kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))  # structuring element or kernel which decides the nature of operation on binary images
+fgbg = cv2.createBackgroundSubtractorMOG2()
+
+while True:
+    ret, frame = cap.read()
+    if ret == True:
+
+       # to get the foreground mask
+       fgmask = fgbg.apply(frame)
+       fgmask = cv2.morphologyEx(fgmask, cv2.MORPH_OPEN, kernel)  # Morphological Transformations
+
+       cv2.imshow('frame1', frame)
+       cv2.imshow('frame',fgmask)
+
+
+       if cv2.waitKey(30) & 0xFF == ord('q'):
+            break
+
+    else:
+        break
+
+
+cap.release()
+cv2.destroyAllWindows()
