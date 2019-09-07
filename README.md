@@ -3,7 +3,7 @@ Background Subtraction , Object Detection and Tracking
 
 OpenCV: Open Source Computer Vision Library
 
-# RESOURCES
+# Resources
 
 Homepage: https://opencv.org
 
