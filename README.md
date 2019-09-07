@@ -14,7 +14,11 @@ Contributing
 Please read the contribution guidelines before starting work on a pull request.
 
 Summary of the guidelines:
+
 One pull request per issue;
+
 Choose the right base branch;
+
 Include tests and documentation;
+
 Follow the coding style guide.
