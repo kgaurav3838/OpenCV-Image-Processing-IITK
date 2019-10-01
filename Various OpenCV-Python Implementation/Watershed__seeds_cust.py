@@ -1,6 +1,6 @@
 import cv2
-import numpy as np
 from matplotlib import cm
+import numpy as np
 
 img = cv2.imread('../data/road_image.jpg')
 copyImg = img.copy()
