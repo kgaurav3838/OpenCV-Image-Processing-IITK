@@ -7,8 +7,8 @@ OpenCV: Open Source Computer Vision Library
 
 1. Remove all previous/current (if any) python installation
 
-2. Install Anaconda and add anaconda to PATH(Environment variables:: Advanced system setting->Environment variables->under system variables go to variable PATHand click edit to add new environmental variables)
-   (During installation checkbox involve PATH)
+2. Install Anaconda and add anaconda to PATH(Environment variables:: Advanced system setting->Environment variables->under system variables go to variable PATH and click edit to add new environmental variables)
+   (During installation check box involve PATH)
    
 3. Open anaconda prompt with admin access. Type and enter:-  
 	conda update --all
