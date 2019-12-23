@@ -3,6 +3,22 @@ Background Subtraction , Object Detection and Tracking
 
 OpenCV: Open Source Computer Vision Library
 
+# Anaconda Python OpenCV Installation
+
+1. Remove all previous/current (if any) python installation
+
+2. Install Anaconda and add anaconda to PATH(Environment variables:: Advanced system setting->Environment variables->under system variables go to variable PATHand click edit to add new environmental variables)
+   (During installation checkbox involve PATH)
+   
+3. Open anaconda prompt with admin access. Type and enter:-  
+	conda update --all
+  
+4. conda install -c menpo opencv (for opencv)
+
+5. conda install spyder=4.0.0  (spyder updation)
+
+6. conda update python (for python updation)
+
 # Resources
 
 Homepage: https://opencv.org
